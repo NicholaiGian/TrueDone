@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<style name="Theme.Truedone" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="colorPrimary">@color/primary_light</item>
+    <item name="colorSecondary">@color/secondary_light</item>
+    <item name="colorTertiary">@color/accent_light</item>
+    <item name="colorSecondaryContainer">@color/accent_light</item>
+    <item name="android:colorBackground">@color/background_light</item>
+    <item name="colorSurface">@color/surface_light</item>
+    <item name="colorOnBackground">@color/on_bg_light</item>
+    <item name="colorOnSurface">@color/on_bg_light</item>
+
+    <item name="android:statusBarColor">?attr/colorTertiary</item>
+    <item name="android:windowLightStatusBar">true</item>
+
+    <item name="bottomNavigationStyle">@style/CustomBottomNav</item>
+
+    <item name="textInputStyle">@style/CustomTextInputLayout</item>
+</style>
+
+<style name="CustomTextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+    <item name="materialThemeOverlay">@style/CustomTextInputOverlay</item>
+</style>
+
+<style name="CustomTextInputOverlay" parent="">
+    <item name="colorPrimary">?attr/colorTertiary</item>
+</style>
+
+<style name="CustomBottomNav" parent="Widget.Material3.BottomNavigationView">
+    <item name="itemActiveIndicatorStyle">@style/CustomBottomNavIndicator</item>
+</style>
+
+<style name="CustomBottomNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+    <item name="android:color">?attr/colorTertiary</item>
+</style>
+</resources>
